@@ -38,10 +38,10 @@ public class CharacterMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && IsGrounded())
         {
-            rigidBod.AddForce(Vector3.up * 60,  ForceMode.Impulse);
+            rigidBod.AddForce(Vector3.up * 80,  ForceMode.Impulse);
 
         }
 
-
+        rigidBod.AddForce(-Vector3.up * 100, ForceMode.Acceleration);
     }
 }
