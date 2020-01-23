@@ -7,6 +7,9 @@ public class CharacterMovement : MonoBehaviour
     public Rigidbody rigidBod;
     float speed = 2;
     bool isJumping = false;
+    int jumpCount = 2;
+
+
 
     float distToGround;
  
@@ -35,7 +38,10 @@ public class CharacterMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && IsGrounded())
         {
-            rigidBod.AddForce(Vector3.up * 60, ForceMode.Impulse);
+            rigidBod.AddForce(Vector3.up * 60,  ForceMode.Impulse);
+
         }
+
+
     }
 }
