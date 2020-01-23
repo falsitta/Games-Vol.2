@@ -28,13 +28,13 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetAxis("Forward") != 0)
+        if (Input.GetAxis("Vertical") != 0)
         {
-            rigidBod.AddForce(Vector3.forward * speed * Input.GetAxis("Forward"), ForceMode.Impulse);
+            rigidBod.AddForce(Vector3.forward * speed * Input.GetAxis("Vertical"), ForceMode.Impulse);
         }
-        if (Input.GetAxis("Sideways") != 0)
+        if (Input.GetAxis("Horizontal") != 0)
         {
-            rigidBod.AddForce(Vector3.right * speed * Input.GetAxis("Sideways"), ForceMode.Impulse);
+            rigidBod.AddForce(Vector3.right * speed * Input.GetAxis("Horizontal"), ForceMode.Impulse);
         }
         if (Input.GetKey(KeyCode.Space) && IsGrounded())
         {
