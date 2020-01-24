@@ -184,6 +184,7 @@ namespace Invector.vCharacterController
             //bool useVerticalVelocity = true;
             //if (useVerticalVelocity) targetVelocity.y = _rigidbody.velocity.y;
             //_rigidbody.velocity = targetVelocity;
+            ///my man get stuck on slops with no velocity
             if (Input.GetAxis("Vertical") != 0)
             {
                 _rigidbody.AddForce(transform.forward * speed * Input.GetAxis("Vertical"), ForceMode.Impulse);
