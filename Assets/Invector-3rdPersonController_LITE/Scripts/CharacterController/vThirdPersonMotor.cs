@@ -169,7 +169,7 @@ namespace Invector.vCharacterController
             // calculate input smooth
             inputSmooth = Vector3.Lerp(inputSmooth, input, (isStrafing ? strafeSpeed.movementSmooth : freeSpeed.movementSmooth) * Time.deltaTime);
 
-            if (!isGrounded || isJumping) return;
+            //if (!isGrounded || isJumping) return;
 
             _direction.y = 0;
             _direction.x = Mathf.Clamp(_direction.x, -1f, 1f);
