@@ -186,11 +186,11 @@ namespace Invector.vCharacterController
             //_rigidbody.velocity = targetVelocity;
             if (Input.GetAxis("Vertical") != 0)
             {
-                _rigidbody.AddForce(Vector3.forward * speed * speed * Input.GetAxis("Vertical"), ForceMode.Impulse);
+                _rigidbody.AddForce(transform.forward * speed * Input.GetAxis("Vertical"), ForceMode.Impulse);
             }
             if (Input.GetAxis("Horizontal") != 0)
             {
-                _rigidbody.AddForce(Vector3.right * speed * Input.GetAxis("Horizontal"), ForceMode.Impulse);
+                _rigidbody.AddForce(transform.right * speed * Input.GetAxis("Horizontal"), ForceMode.Impulse);
             }
 
         }

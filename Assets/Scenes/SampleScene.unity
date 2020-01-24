@@ -2154,13 +2154,13 @@ MonoBehaviour:
   rotateByWorld: 0
   useContinuousSprint: 1
   sprintOnlyFree: 1
-  locomotionType: 0
+  locomotionType: 1
   freeSpeed:
     movementSmooth: 6
     animationSmooth: 0.2
     rotationSpeed: 16
     walkByDefault: 0
-    rotateWithCamera: 0
+    rotateWithCamera: 1
     walkSpeed: 2
     runningSpeed: 4
     sprintSpeed: 6
@@ -2169,7 +2169,7 @@ MonoBehaviour:
     animationSmooth: 0.2
     rotationSpeed: 16
     walkByDefault: 0
-    rotateWithCamera: 1
+    rotateWithCamera: 0
     walkSpeed: 2
     runningSpeed: 4
     sprintSpeed: 6
@@ -2511,6 +2511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425428723088313503, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: freeSpeed.rotateWithCamera
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6256178326531195779, guid: fc9b148a2950aaf4cba8422632222c5d,
         type: 3}
@@ -3791,6 +3796,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300006, guid: 340f99b8334a14c4a8a01dce6e1e5348, type: 3}
+    - target: {fileID: 4397607974812625126, guid: beb1e9b4e116b5f4db4374da773366d2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 596901104, guid: beb1e9b4e116b5f4db4374da773366d2, type: 3}
       propertyPath: m_IsActive
       value: 0
