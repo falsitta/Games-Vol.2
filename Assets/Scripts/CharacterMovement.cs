@@ -7,9 +7,6 @@ public class CharacterMovement : MonoBehaviour
     public Rigidbody rigidBod;
     float speed = 2;
     bool isJumping = false;
-    int jumpCount = 2;
-
-
 
     float distToGround;
  
@@ -28,19 +25,19 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetAxis("Vertical") != 0)
-        {
-            rigidBod.AddForce(Vector3.forward * speed * Input.GetAxis("Vertical"), ForceMode.Impulse);
-        }
-        if (Input.GetAxis("Horizontal") != 0)
-        {
-            rigidBod.AddForce(Vector3.right * speed * Input.GetAxis("Horizontal"), ForceMode.Impulse);
-        }
-        if (Input.GetKey(KeyCode.Space) && IsGrounded())
-        {
-            rigidBod.AddForce(Vector3.up * 80,  ForceMode.Impulse);
+        //if (Input.GetAxis("Vertical") != 0)
+        //{
+        //    rigidBod.AddForce(Vector3.forward * speed * Input.GetAxis("Vertical"), ForceMode.Impulse);
+        //}
+        //if (Input.GetAxis("Horizontal") != 0)
+        //{
+        //    rigidBod.AddForce(Vector3.right * speed * Input.GetAxis("Horizontal"), ForceMode.Impulse);
+        //}
+        //if (Input.GetKey(KeyCode.Space) && IsGrounded())
+        //{
+        //    rigidBod.AddForce(Vector3.up * 80, ForceMode.Impulse);
 
-        }
+        //}
         if (!IsGrounded())
         {
             rigidBod.AddForce(-Vector3.up * 100, ForceMode.Acceleration);

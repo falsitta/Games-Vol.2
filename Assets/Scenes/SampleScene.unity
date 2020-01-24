@@ -2174,19 +2174,19 @@ MonoBehaviour:
     runningSpeed: 4
     sprintSpeed: 6
   jumpWithRigidbodyForce: 0
-  jumpAndRotate: 1
+  jumpAndRotate: 0
   jumpTimer: 0.3
-  jumpHeight: 4
+  jumpHeight: 40
   airSpeed: 5
   airSmooth: 6
-  extraGravity: -10
+  extraGravity: -50
   limitFallVelocity: -15
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
-  slopeLimit: 45
+  slopeLimit: 60
   _rigidbody: {fileID: 1489768018}
 --- !u!1 &1021531825
 GameObject:
@@ -3799,7 +3799,7 @@ PrefabInstance:
     - target: {fileID: 4397607974812625126, guid: beb1e9b4e116b5f4db4374da773366d2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 596901104, guid: beb1e9b4e116b5f4db4374da773366d2, type: 3}
       propertyPath: m_IsActive
