@@ -41,7 +41,10 @@ public class CharacterMovement : MonoBehaviour
             rigidBod.AddForce(Vector3.up * 80,  ForceMode.Impulse);
 
         }
+        if (!IsGrounded())
+        {
+            rigidBod.AddForce(-Vector3.up * 100, ForceMode.Acceleration);
 
-        rigidBod.AddForce(-Vector3.up * 100, ForceMode.Acceleration);
+        }
     }
 }
