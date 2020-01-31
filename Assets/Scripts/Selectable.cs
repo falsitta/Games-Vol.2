@@ -21,7 +21,7 @@ public class Selectable : MonoBehaviour
             //Replace this with your custom code. What do you want to happen to a Selectable when it get's (de)selected?
             Renderer r = GetComponentInChildren<Renderer>();
             if (r != null)
-                r.material.color = value ? Color.red : Color.white;
+                r.material.color = value ? Color.red : Color.green;
         }
     }
 
